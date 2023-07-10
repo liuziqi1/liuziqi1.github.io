@@ -80,16 +80,16 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ms-lg-auto">
-                    <li class="nav-item ">
+                    <li class="nav-item active">
                         <a class="nav-link" href="index.html">信息概览 <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="wordcloud.html">热门词云</a>
                     </li>
-                    <li class="nav-item"">
+                    <li class="nav-item">
                         <a class="nav-link" href="timeline.html">时间趋势</a>
                     </li>
-                    <li class="nav-item   active">
+                    <li class="nav-item">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             主题分布<span class="fas fa-angle-down"></span>
@@ -100,16 +100,16 @@
                             <a class="dropdown-item" href="network.html">共现网络</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            情感分布<span class="fas fa-angle-down"></span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="emotion.html">情感分布</a>
-                            <a class="dropdown-item" href="hotemotion.html">情感与热度</a>
-                        </div>
-                    </li>
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"#}
+{#                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+{#                            情感分布<span class="fas fa-angle-down"></span>#}
+{#                        </a>#}
+{#                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">#}
+{#                            <a class="dropdown-item" href="emotion.html">情感分布</a>#}
+{#                            <a class="dropdown-item" href="hotemotion.html">情感与热度</a>#}
+{#                        </div>#}
+{#                    </li>#}
                     <li class="nav-item">
                         <a class="nav-link" href="toplist.html">热门信息</a>
                     </li>
@@ -228,14 +228,14 @@
     option = {
   angleAxis: {
     type: 'category',
-    data: ['传统风俗', '地域特色', '旅游产业', '文化发展', '乡村振兴']
+    data: ['传统风俗', '民族信仰', '旅游产业', '文化发展', '脱贫攻坚']
   },
   radiusAxis: {},
   polar: {},
   series: [
     {
       type: 'bar',
-      data: [911, 169, 14, 84, 29],
+      data: [1035, 4469, 186, 534, 503],
       coordinateSystem: 'polar',
       name: '转发',
       stack: '转发',
@@ -245,7 +245,7 @@
     },
     {
       type: 'bar',
-      data: [4221, 412, 24, 203, 90],
+      data: [3568, 145, 351, 2125, 304],
       coordinateSystem: 'polar',
       name: '评论',
       stack: '评论',
@@ -255,7 +255,7 @@
     },
     {
       type: 'bar',
-      data: [5153, 5071, 171, 416, 289],
+      data: [10598, 5974, 1137, 4657, 345],
       coordinateSystem: 'polar',
       name: '点赞',
       stack: '点赞',
